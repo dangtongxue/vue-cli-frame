@@ -1,0 +1,185 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: 0;
+  // letter-spacing: 1.2px;
+  // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  // -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  // -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  // -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+b {
+  font-weight: normal;
+}
+input {
+  background: #fff;
+}
+
+html,
+body,
+#app {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 14px;
+  background: $page-bg;
+}
+.box_style {
+  border-radius: 4px;
+  background: $white;
+  overflow: hidden;
+}
+// 按钮选中的效果
+.active-btn {
+  background: $primary-btn;
+  border-color: $primary-btn;
+  color: #FFFFFF;
+}
+// 弹出框
+.el-popover {
+  padding: 0;
+}
+
+// 实心按钮滑动的样子
+.btn:hover {
+  transform: scale(1.02);
+}
+.filter-button .el-button:hover,.filter-button .el-button:focus {
+  background: $primary-btn;
+  border-color: $primary-btn;
+
+}
+button {
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.solid-btn:hover {
+  background: $primary-btn;
+  border-color: $primary-btn;
+  color: $white !important;
+}
+// wrap
+.wrap {
+  // width: 100%;
+  overflow: hidden;
+  margin: 10px;
+  // background: $white;
+}
+// 表格 element
+.el-table th.is-leaf, .el-table td {
+  border-bottom: 1px solid $border;
+}
+// .el-table th {
+//   background: #f3f6f8;
+// }
+// .el-table--striped .el-table__body tr.el-table__row--striped td {
+//   background: #f3f6f8;
+// }
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background: $tableColor;
+}
+// 文字链接的颜色
+.el-link.el-link--default {
+  color: $color3;
+  font-size: $size-16;
+}
+// 头部搜索框下拉列表
+.class-autocomplete {
+  .el-autocomplete-suggestion__wrap {
+    max-height: 400px;
+  }
+}
+// 弹框样式
+.el-dialog__header {
+  padding: 0;
+}
+.el-dialog__headerbtn .el-dialog__close {
+  color: #fff;
+}
+.el-dialog {
+  border-radius: 8px;
+  overflow-x: hidden;
+  margin-top: 0 !important;
+  margin: 0 auto;
+  @include absoluteCenter;
+}
+.el-scrollbar__wrap {
+  margin-right: -17px !important;
+}
+.el-input .el-input__inner {
+  border-radius: 4px;
+}
+.el-dialog__headerbtn:focus .el-dialog__close,
+.el-dialog__headerbtn:hover .el-dialog__close {
+  color: #fff;
+}
+.el-dialog__body {
+  padding: 0;
+}
+// table
+.table-wrap {
+  table {
+    width: 100%;
+    border: 1px solid rgba(223,223,223,1);
+    border-collapse: collapse;
+    border-spacing: 0;
+    th {
+      height: 40px;
+      background: rgba(243,246,248,1);
+      color: #333;
+      font-size: 14px;
+      padding-right: 30px;
+      border: 1px solid rgba(223,223,223,1);
+    }
+    tr {
+      font-size: 14px;
+      color: #333;
+      padding: 10px;
+      &:hover {
+        background: rgba(243,246,248,1) !important;
+        th {
+          background: rgba(243,246,248,1) !important;
+        }
+      }
+    }
+    td {
+      height: 40px;
+      border: 1px solid rgba(223,223,223,1)
+    }
+    .right {
+      text-align: right;
+    }
+    .left {
+      text-align: left;
+    }
+    .center {
+      text-align: center;
+    }
+  }
+}
+// 多选框在弹框中抖动
+.el-checkbox__inner::after {
+  transform: rotate(45deg) scaleY(1)!important;
+}
+
+::-ms-clear, ::-ms-reveal{
+  display: none;
+}
+textarea {
+  resize: none !important;
+}
+button[disabled] {
+  cursor: not-allowed;
+}

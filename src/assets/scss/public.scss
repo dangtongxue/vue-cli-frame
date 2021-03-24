@@ -1,0 +1,61 @@
+
+// 文字省略号
+@mixin text-overflow ($width: 100%) {
+  max-width: $width;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+// flex布局 上下左右居中
+@mixin flexTwoCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// flex布局 上下居中  左对齐
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+}
+// flex布局  上下居中 左右两端对齐
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+// flex布局  上下居中 均分
+@mixin flexAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+// flex布局  左右居中
+@mixin flexJCcenter {
+  display: flex;
+  justify-content: center;
+}
+// 绝对定位
+@mixin absolute($top:0 , $left: 0) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+// 绝对定位 right
+@mixin absoluteR($top:0 , $right: 0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+// 不知道宽高的情况下上下左右居中
+@mixin absoluteCenter {
+  @include absolute(50%, 50%);
+  transform: translate(-50%, -50%);
+}
+// 行高 文本居中
+@mixin textCenter ($height) {
+  height: $height;
+  text-align: center;
+  line-height: $height;
+}
